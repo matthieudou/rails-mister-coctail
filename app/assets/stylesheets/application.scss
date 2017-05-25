@@ -1,0 +1,28 @@
+// app/assets/stylesheets/application.scss
+// importing material icons with material_icons gem
+/*
+*= require material_icons
+*/
+@import "material_icons";
+
+
+
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "vendor/index";
+// importing material icons with material_icons gem
+@import "material_icons";
+
+// Your CSS
+@import "layout/index";
+@import "components/index";
+@import "pages/index";
+
+

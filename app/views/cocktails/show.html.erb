@@ -1,0 +1,13 @@
+<div class="jumbotron">
+  <h1><%= @cocktail.name %></h1>
+</div>
+
+<div class="list-group">
+  <% @doses.each do |dose| %>
+    <div class="list-group-item">
+      <%= dose.description %>
+      <strong><%= dose.ingredient.name.upcase %></strong>
+    </div>
+  <% end %>
+</div>
+<%= link_to("Add dose", new_cocktail_dose_path(@cocktail) , class: "btn btn-warning") %>

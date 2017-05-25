@@ -1,0 +1,6 @@
+<h2>NEW COCKTAIL</h2>
+
+<%= simple_form_for @cocktail do |f| %>
+  <%= f.input :name %>
+  <%= f.submit params[:action], class: "btn btn-success" %>
+<% end %>

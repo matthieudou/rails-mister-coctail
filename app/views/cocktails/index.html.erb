@@ -1,0 +1,13 @@
+<div class="page-header">
+  <h1>Cocktails <small>Here are all the cocktails available</small></h1>
+</div>
+
+<div class="list-group">
+  <% @cocktails.each do |cocktail| %>
+    <div class="list-group-item">
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to("NEW COCKTAIL", new_cocktail_path , {class: "btn btn-primary", style: "margin-bottom: 20px"} )%>
